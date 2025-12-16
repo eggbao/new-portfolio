@@ -3,6 +3,7 @@ var header = document.querySelector("header");
 var nav = document.querySelector("nav");
 var scrollbutton = document.querySelector(".scroll-to-top");
 var body = document.querySelector("body");
+var question = document.querySelector(".questionicon");
 
 wrapperMenu.addEventListener("click", function () {
   wrapperMenu.classList.toggle("open");
@@ -20,21 +21,33 @@ document.querySelectorAll("li").forEach((li) => {
   } else if (li.innerHTML === "User Research" || li.innerHTML === "Miro") {
     li.style.backgroundColor = "#21AECF30";
     li.style.borderColor = "#21AECF";
-  } else if (li.innerHTML === "Branding" || li.innerHTML === "Photoshop") {
+  } else if (
+    li.innerHTML === "Branding" ||
+    li.innerHTML === "Photoshop" ||
+    li.innerHTML === "FigJam"
+  ) {
     li.style.backgroundColor = "#A566F230";
     li.style.borderColor = "#A566F2";
+  } else if (li.innerHTML === "AI Strategy") {
+    li.style.backgroundColor = "#dc3a3a30";
+    li.style.borderColor = "#c21616ff";
   } else if (
     li.innerHTML === "Visual Design" ||
     li.innerHTML === "Google Drive"
   ) {
     li.style.backgroundColor = "#6BC92630";
     li.style.borderColor = "#6BC926";
-  } else if (li.innerHTML === "User Flows" || li.innerHTML === "Blender") {
+  } else if (
+    li.innerHTML === "User Flows" ||
+    li.innerHTML === "Blender" ||
+    li.innerHTML === "Affinity Mapping"
+  ) {
     li.style.backgroundColor = "#e69a2730";
     li.style.borderColor = "#e8a126ff";
   } else if (
     li.innerHTML === "Interaction Design" ||
-    li.innerHTML === "Google Forms"
+    li.innerHTML === "Google Forms" ||
+    li.innerHTML === "Service Design"
   ) {
     li.style.backgroundColor = "#3adcb130";
     li.style.borderColor = "#16c28cff";
@@ -70,19 +83,24 @@ if (document.querySelector(".logo")) {
 document
   .querySelector(".dark-mode-button")
   .addEventListener("click", function () {
-    console.log("Button text:", JSON.stringify(this.innerHTML));
     if (this.innerHTML == "dark_mode") {
       this.innerHTML = "light_mode";
       this.style.backgroundColor = "#ebd547ff";
       this.style.borderColor = "#e9ae30ff";
       this.classList.add("dark-font");
       body.classList.add("dark-mode");
+      if (question) {
+        question.src = "images/question-darkmode.svg";
+      }
     } else {
       this.innerHTML = "dark_mode";
       this.style.backgroundColor = "#294724";
       this.style.borderColor = "#243f1e";
       this.classList.remove("dark-font");
       body.classList.remove("dark-mode");
+      if (question) {
+        question.src = "images/question-lightmode.svg";
+      }
     }
   });
 

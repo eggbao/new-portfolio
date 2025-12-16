@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <title>Comic Con Bingo</title>
+  </head>
+
+  <body class="project">
+    <header>
+      <a href="#main" class="skip" tabindex="0">Skip to main content</a>
+      <button class="scroll-to-top material-symbols-outlined">arrow_upward</button>
+      <button class="dark-mode-button material-symbols-outlined">dark_mode</button>
+      <div class="header-menu">
+        <a href="index.html" class="wordmark">LOUISE.</a>
+        <div class="wrapper-menu">
+          <div class="line-menu half start"></div>
+          <div class="line-menu"></div>
+          <div class="line-menu half end"></div>
+        </div>
+        <nav>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#resume">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="project-hero">
+        <div class="info">
+          <img src="images/bingo.png" alt="Comic Con Bingo app mockup" />
+          <div>
+            <h1>Comic Con Bingo</h1>
+            <h2>
+              A multiplayer scavenger hunt app that transforms convention
+              downtime into an engaging exploration experience
+            </h2>
+          </div>
+        </div>
+        <div class="project-info">
+          <div>
+            <h3>Role:</h3>
+            <p><strong>UX/UI Designer</strong></p>
+          </div>
+          <div>
+            <h3>Timeline:</h3>
+            <p><strong>Half a semester (class project)</strong></p>
+          </div>
+          <div>
+            <h3>Skills:</h3>
+            <ul class="skills">
+              <li>User Flows</li>
+              <li>UI Design</li>
+              <li>Interaction Design</li>
+              <li>Visual Design</li>
+              <li>Branding</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools:</h3>
+            <ul class="tools">
+              <li>Figma</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="overview">
+        <h2>Problem and Context</h2>
+        <div class="grid">
+          <div>
+            <h3 class="right-align">Designing for convention downtime</h3>
+            <p>
+              Convention attendees face significant downtime between panels,
+              signings, and events. While they're eager to stay engaged with
+              convention culture, there are limited structured activities that
+              encourage exploration of the venue and interaction with the
+              community. Existing solutions require attendees to passively wait
+              or wander without clear direction or reward.
+            </p>
+            <p>
+              I set out to design an experience that would give attendees a fun,
+              low-pressure way to discover convention elements they might
+              otherwise overlook while offering tangible incentives through
+              real-life prizes at a Comic Con Bingo booth.
+            </p>
+          </div>
+          <img
+            src="images/bingo-logo.webp"
+            alt="Comic Con Bingo logo"
+            class="img2 clickable"
+          />
+        </div>
+        <div>
+          <h3>Understanding attendee needs</h3>
+          <p>
+            Since this was a conceptual class project without access to actual
+            convention attendees, I developed a user need statement based on
+            secondary research and my own observations at fan conventions. The
+            core insight was that attendees want activities that align with
+            their fandoms, provide clear goals, and don't require extensive
+            commitment or coordination with others.
+          </p>
+          <p>
+            <strong>From this, I identified three key user needs:</strong>
+          </p>
+          <ul class="three-group">
+            <li>Accessible engagement that works during unpredictable gaps in schedules</li>
+            <li>Social motivation through light competition without barriers to entry</li> 
+            <li>Recognition and reward tied to convention culture</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Defining the Experience</h2>
+        <div class="grid grid-left">
+          <div>
+            <h3 class="left-align">Mapping the game flow</h3>
+            <p>
+              I mapped out the full user flow to ensure the game mechanic would
+              be intuitive and frictionless. Players would join an active game
+              from the home screen and receive a randomly generated bingo card
+              featuring convention-specific items (cosplayers, booths, signage,
+              etc.). The challenge: photograph these items within a set time
+              limit, turning the card into a timed scavenger hunt.
+            </p>
+            <p>
+              When players tap a bingo square, a camera prompt appears, allowing
+              them to either take a new photo or upload one from their library.
+              This flexibility was important, as convention WiFi can be
+              unreliable and attendees may capture images before formally
+              joining a game. The first player to achieve five in a row wins
+              prizes at a designated booth. Non-winners return to the home
+              screen to join the next round, maintaining continuous engagement
+              throughout the event.
+            </p>
+            <p>
+              This structure balanced ease of use with competitive excitement
+              and encouraged venue exploration without overwhelming users with
+              complex rules or lengthy onboarding.
+            </p>
+          </div>
+          <img
+            src="images/bingo-flow.webp"
+            alt="User flow diagram for Comic Con Bingo"
+            class="clickable"
+          />
+        </div>
+        <div class="grid">
+          <div>
+            <h3 class="right-align">Visual design and mood</h3>
+            <p>
+              To establish the app's visual direction, I created a mood board
+              that drew from comic book aesthetics: bold primary colors,
+              halftone textures, comic-style illustrations, and pop culture
+              references. The goal was to make the interface feel energetic and
+              on-brand with convention culture while remaining legible and
+              functional.
+            </p>
+            <p>
+              I chose vibrant colors commonly found in traditional comics and
+              designed a logo in Adobe Photoshop that reinforced the playful,
+              nostalgic tone. This visual language carried through to all
+              subsequent design phases, ensuring the app felt cohesive and
+              culturally relevant.
+            </p>
+          </div>
+          <img
+            src="images/bingo-moodboard.webp"
+            alt="Mood board with comic book aesthetics"
+            class="clickable"
+          />
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Wireframing & Iteration</h2>
+        <div class="grid grid-left">
+          <div>
+            <h3 class="left-align">Initial sketches and explorations</h3>
+            <p>
+              I started with low-fidelity paper sketches to explore layout
+              options and interaction patterns. At this stage, my priority was
+              simplicity. I wanted to ensure that players of all tech literacy
+              levels could understand the game mechanics at a glance.
+            </p>
+          </div>
+          <img
+            src="images/bingo-sketch.webp"
+            alt="Early-stage lo-fi wireframe sketches"
+            class="clickable"
+          />
+        </div>
+        <div class="grid">
+          <div>
+            <h3 class="right-align">From sketches to refined wireframes</h3>
+            <p>
+              From there, I moved into medium-fidelity wireframes in Figma,
+              refining the visual hierarchy and incorporating gestural
+              interactions (tap to open camera, swipe to browse cards, etc.). I
+              shared these with classmates and received feedback that informed
+              adjustments to button sizing, prompt clarity, and flow
+              transitions. For example, early iterations buried the camera
+              prompt too deep; I revised the design to surface it immediately
+              upon tapping a square.
+            </p>
+          </div>
+          <img
+            src="images/bingo-midfi.png"
+            alt="Medium fidelity wireframes with gestures"
+            class="clickable"
+          />
+        </div>
+        <div class="grid grid-left">
+          <div>
+            <h3 class="left-align">High-fidelity design and prototype</h3>
+            <p>
+              The high-fidelity wireframes brought the mood board to life. I
+              applied the comic-inspired color palette, incorporated the custom
+              logo, and added subtle animations (button presses, card
+              transitions) to enhance the sense of excitement and immersion.
+            </p>
+            <p>
+              Attention to micro-interactions was critical. For instance, when a
+              player completes a row, a brief celebratory animation reinforces
+              their win. When a round ends without a win, a friendly prompt
+              invites them to try again. These details helped sustain engagement
+              and emotional investment.
+            </p>
+          </div>
+          <img
+            src="images/bingo-screens.png"
+            alt="Selected high fidelity prototype screens"
+            class="clickable"
+          />
+        </div>
+        <div class="topmargin">
+          <h3>Final interactive prototype</h3>
+          <p>
+            The final prototype brings together all design decisions, showcasing
+            the full user experience from game entry to completion. The embedded
+            Figma prototype below demonstrates a complete game loop: joining a
+            game, photographing bingo items, submitting photos, winning or
+            returning to the home screen, and repeating.
+          </p>
+        </div>
+        <iframe
+          src="https://embed.figma.com/proto/4GhHtInsvq405NgK0rKl5A/Louise-Depa---Bingo?page-id=123%3A93&node-id=132-274&p=f&viewport=1393%2C901%2C0.16&scaling=scale-down&content-scaling=fixed&starting-point-node-id=132%3A274&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Reflection</h2>
+        <div>
+          <h3>Acknowledging project limitations</h3>
+          <p>
+            As a class project, this concept wasn't validated with real users or
+            tested in a live convention environment. I made design assumptions
+            based on general UX principles and secondary research, but lacked
+            direct feedback from the target audience. Additionally, I did not
+            address backend considerations such as photo verification, prize
+            distribution logistics, or scalability across different convention
+            sizes.
+          </p>
+        </div>
+        <div>
+          <h3>Key learnings and next steps</h3>
+          <p>
+            This project taught me the importance of anchoring design decisions
+            in user context, even when working conceptually. By grounding every
+            choice in the user need statement and imagined scenarios, I was able
+            to create a cohesive experience that felt purposeful rather than
+            arbitrary.
+          </p>
+          <p>
+            I also learned that clarity beats novelty. Early on, I experimented
+            with more complex game mechanics (team modes, bonus challenges), but
+            feedback and iteration revealed that simplicity would better serve
+            users in a chaotic, distraction-filled environment like a convention
+            floor.
+          </p>
+          <p>
+            If I were to revisit this, I would prioritize testing with real
+            attendees to uncover friction points I couldn't anticipate and
+            explore how the app might integrate with existing convention
+            infrastructure (badge scanning, official apps, sponsor
+            partnerships). The visual design holds up well, but the true test
+            would be whether it drives the exploration and engagement I designed
+            it for.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="index.html" class="bottom_logo">LOUISE.</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/ldepa">LINKEDIN</a>
+        <a href="mailto:depalouise@gmail.com?subject=Hello!"
+          >Depalouise@gmail.com</a
+        >
+      </div>
+    </footer>
+    <!-- The Modal from w3 schools [https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js](https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js) -->
+    <div id="myModal" class="modal">
+      <span class="close">×</span>
+      <img
+        class="modal-content"
+        id="img01"
+        alt="Bigger sized image over a dark background"
+      />
+      <div id="caption"></div>
+    </div>
+    <script type="text/javascript" src="js/new.js"></script>
+  </body>
+</html>

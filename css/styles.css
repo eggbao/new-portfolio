@@ -175,9 +175,9 @@ h2 {
   font-size: 2.2em;
   text-align: center;
 }
-.project .info h2{
-  font-family:"Atkinson";
-  color:black;
+.project .info h2 {
+  font-family: "Atkinson";
+  color: black;
   font-size: 24px;
 }
 h3 {
@@ -220,10 +220,15 @@ nav *:hover {
 nav > a {
   color: #375f30;
 }
-
 footer a:hover {
   font-size: 1.2em;
   font-weight: bolder;
+}
+iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
 }
 
 .bottom_logo {
@@ -249,6 +254,7 @@ footer a:hover {
 .wordmark:hover {
   font-weight: bold;
   font-size: 2.6em;
+  color:#be79b4;
 }
 
 .card_grid {
@@ -301,7 +307,9 @@ footer a:hover {
   border: 2px #a6da9e solid;
   cursor: default;
 }
-
+.topmargin {
+  margin-top: 2em;
+}
 .card:hover {
   border: 2px solid #375f30;
   background-color: #2d962321;
@@ -505,7 +513,22 @@ hr {
 .project-info h3 {
   font-size: 1em;
 }
-
+.callout {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  padding: 7%;
+  font-size: 1.3em;
+  margin: 1.5em 0px;
+  background: linear-gradient(#a6da9e38, rgba(255, 255, 255, 0.58) 110%);
+  box-shadow: none;
+  border: 2px #a6da9e solid;
+  border-radius: 25px;
+}
+.callout img {
+  width: 100px;
+  margin: auto;
+}
 /* from w3schools [https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js](https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js) */
 /* The Modal (background) */
 .modal {
@@ -526,8 +549,6 @@ hr {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
 }
 
 /* Caption of Modal Image */
@@ -629,19 +650,47 @@ hr {
 .open .line-menu.end {
   transform: rotate(-90deg) translateX(-12px);
 }
-
+ol li {
+  margin: 1em 0px;
+}
+.three-group {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.three-group li {
+  display: grid;
+  width: 60vw;
+  height: 60vw;
+  list-style: none;
+  padding: 2em;
+  font-weight: bold;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 1em auto;
+  background: linear-gradient(#a6da9e38, rgba(255, 255, 255, 0.58) 110%);
+  box-shadow: none;
+  border: 2px #a6da9e solid;
+  border-radius: 50%;
+}
 .socials {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
+.caption {
+  text-align: center;
+}
 .socials a {
   padding: 14px;
   color: white;
 }
 .dark-mode {
   background-color: #14161f;
+  color: #f7f2f2;
+}
+.dark-mode #project-hero h2 {
   color: #f7f2f2;
 }
 
@@ -690,7 +739,8 @@ hr {
   color: #f7f2f2;
 }
 
-.dark-mode .small-grid p {
+.dark-mode .small-grid p,
+.dark-mode .callout {
   background: linear-gradient(#15642050, #051f038f 110%);
   border: 2px #0e250b solid;
   color: white;
@@ -706,7 +756,6 @@ hr {
   background-color: #15642070;
   transform: scale(1.05);
 }
-
 
 /* Add Animation */
 @-webkit-keyframes zoom {
@@ -752,7 +801,11 @@ hr {
   .project img {
     display: block;
     width: 70%;
-    margin: 2em auto 0px auto;
+    margin: 2em auto;
+  }
+  .callout img {
+    width: 100px;
+    margin: auto;
   }
   .project h1 {
     font-size: 4em;
@@ -780,6 +833,13 @@ hr {
   .small-grid p {
     margin: 0;
   }
+  .three-group {
+    flex-direction: row;
+  }
+  .three-group li {
+    width: 28vw;
+    height: 28vw;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -787,6 +847,10 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+  .three-group li {
+    width: 22vw;
+    height: 22vw;
   }
   .card {
     margin: 0px;
@@ -800,6 +864,9 @@ hr {
   main,
   header {
     margin: 0vw 5vw;
+  }
+  iframe {
+    height: 500px;
   }
   .twogrid {
     display: grid;
@@ -835,6 +902,7 @@ hr {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2em;
     align-items: center;
   }
   .grid-left div {
@@ -856,10 +924,29 @@ hr {
   }
   .info {
     display: flex;
+    gap: 2em;
     align-items: center;
   }
   .info img {
     width: 50%;
+  }
+  .callout {
+    display: grid;
+    grid-template-columns: 0.15fr 0.85fr;
+    gap: 2em;
+    align-items: center;
+    text-align: left;
+    padding: 7%;
+    font-size: 1.3em;
+    margin: 2em 0px;
+    background: linear-gradient(#a6da9e38, rgba(255, 255, 255, 0.58) 110%);
+    box-shadow: none;
+    border: 2px #a6da9e solid;
+    border-radius: 25px;
+  }
+  .callout img {
+    max-width: 100px;
+    margin: auto;
   }
 }
 
@@ -883,6 +970,10 @@ hr {
   * {
     font-size: 16px;
   }
+  .three-group li {
+    width: 20vw;
+    height: 20vw;
+  }
   #hero {
     height: 83vh;
     margin: 0px 3vw;
@@ -893,9 +984,18 @@ hr {
   h1 {
     text-align: left;
   }
+  iframe {
+    height: 550px;
+  }
   .small-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
+  }
+  .callout {
+    padding: 4%;
+  }
+  .callout em {
+    font-size: 1.2em;
   }
 }
 
@@ -903,6 +1003,9 @@ hr {
   .about_content {
     flex-direction: row;
     gap: 4em;
+  }
+  iframe {
+    height: 600px;
   }
   div:has(> .skills) {
     margin-top: 0px;
@@ -953,6 +1056,13 @@ hr {
   header {
     margin: 0vw 20vw;
   }
+  .three-group li {
+    width: 15vw;
+    height: 15vw;
+  }
+  iframe {
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 1900px) {
@@ -965,6 +1075,9 @@ hr {
   main,
   header {
     margin: 0vw 20vw;
+  }
+  iframe {
+    height: 650px;
   }
   .small-grid {
     margin: 2em 3.5vw;
